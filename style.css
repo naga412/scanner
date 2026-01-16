@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FCF8F8;
+}
+
+.merge {
+    display: flex;
+    gap: 10%;
+}
+
+.bio {
+    padding: 2% 3%;
+}
+
+.bio h1,
+.bio .top {
+    text-align: center;
+}
+
+.bio h1 {
+    margin-top: 3%;
+}
+
+.bio h2 {
+    position: relative;
+}
+
+.bio h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #f4c430;
+    display: block;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.small {
+    font-size: 14px;
+    opacity: .8;
+}
+
+.pic {
+    width: 50%;
+}
+
+.pic img {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    transform: rotateY(-180deg);
+}
+
+.about {
+    margin-top: 2%;
+}
+
+h2 {
+    margin-left: 5%;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.about p,
+.list {
+    margin-left: 7%;
+    margin-bottom: 3%;
+    font-size: 17px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.label {
+    margin-left: 7%;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.study ul {
+    display: flex;
+    gap: 10%;
+}
+
+.skills,
+.stren {
+    background: #edb10c;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.skills:hover,
+.stren:hover {
+    transform: scale(1.05);
+}
+
+.study ul,
+.project ul,
+.contact ul {
+    margin-left: 10%;
+    margin-bottom: 3%;
+    font-size: 17px;
+}
+
+li {
+    margin-bottom: 1%;
+}
+
+.contact li {
+    margin-bottom: 0;
+}
+
+@media (max-width:1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .merge {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pic {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .pic img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-position: top center;
+        transform: none;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, .15);
+    }
+
+    .bio h1 {
+        font-size: 35px;
+    }
+
+    .bio .top {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .about p,
+    .skills,
+    .stren,
+    li {
+        font-size: 20px;
+    }
+
+    .study ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
